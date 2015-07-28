@@ -1,7 +1,7 @@
 # Factoid plugin
 
 [![Build
-Status](https://travis-ci.org/bnrubin/Encyclopedia.png?branch=master)](https://travis-ci.org/bnrubin/Encyclopedia)
+Status](https://travis-ci.org/bnrubin/Encyclopedia.png?branch=sqlalchemy)](https://travis-ci.org/bnrubin/Encyclopedia)
 
 > Note: This plugin used to have package lookup, this was mooved to the
 > PackageInfo plugin.

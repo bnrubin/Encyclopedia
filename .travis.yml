@@ -1,0 +1,9 @@
+language: python
+python:
+    - '2.7'
+before_install:
+    - sudo apt-get update -qq
+    - sudo apt-get install -y python-sqlite python-tz supybot
+script:
+    - echo $TRAVIS_PYTHON_VERSION
+    - cd .. && supybot-test Encyclopedia

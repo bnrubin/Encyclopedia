@@ -1,6 +1,10 @@
-Factoid plugin
-Note: This plugin used to have package lookup, this was mooved to the
-PackageInfo plugin.
+# Factoid plugin
+
+[![Build
+Status](https://travis-ci.org/bnrubin/Encyclopedia.png?branch=master)](https://travis-ci.org/bnrubin/Encyclopedia)
+
+> Note: This plugin used to have package lookup, this was mooved to the
+> PackageInfo plugin.
 
 Pick a name for your database. A lowercase-only name without spaces is probably
 best, this example wil use myfactoids as name. Then create a directory to store
@@ -9,9 +13,13 @@ If you choose to enable this plugin during supybot-wizard the database will be
 created for you. If noy, you can create the database manually.
 In the new directory create an SQLite2 database with the following command:
 
+```bash
 sqlite myfactoids.db
+```
+
 Then copy/paste in the below 2 tables:
 
+```sql
 CREATE TABLE facts (
         id INTEGER PRIMARY KEY,
         author VARCHAR(100) NOT NULL,
@@ -28,7 +36,7 @@ CREATE TABLE log (
         added DATETIME,
         oldvalue VARCHAR(200) NOT NULL
 );
-
+```
 
 If you want to create more databases, repeat these last two steps.
 
